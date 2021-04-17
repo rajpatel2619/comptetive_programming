@@ -9,6 +9,13 @@ class Solution {
 public:
     int lengthOfLastWord(string s) {
         
+        stringstream str(s);
+        string temp;
+        int length = 0;
+        while (str>>temp)
+        length = temp.size();       
+        return length;
+        
     }
 };
 // @lc code=end
